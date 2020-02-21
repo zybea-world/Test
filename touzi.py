@@ -6,6 +6,7 @@ while money > 0:
     debt = int(input("请下注："))
     if 0< debt <=money:
         count = 1
+        #第一次摇骰子
         first = randint(1, 6) + randint(1, 6)
         print("第{}次投色子...".format(count))
         time.sleep(1)
@@ -38,7 +39,7 @@ while money > 0:
                     needs_go = True
     else:
         print("金额不足")
-    #第一次摇骰子
+    
 
 print("你破产了")
 
